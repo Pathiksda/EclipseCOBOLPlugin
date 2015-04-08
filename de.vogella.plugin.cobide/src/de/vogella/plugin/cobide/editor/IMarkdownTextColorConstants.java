@@ -1,0 +1,24 @@
+package de.vogella.plugin.cobide.editor;
+
+import org.eclipse.swt.graphics.RGB;
+
+public interface IMarkdownTextColorConstants {
+	RGB DEFAULT = new RGB(0, 0, 0);	
+	RGB DEFAULT_BG = new RGB(255, 255, 255);		
+	RGB MARKDOWN_ID_DIV = new RGB(128, 0, 0);
+	RGB MARKDOWN_ID_DIV_BG = new RGB(150, 250, 250);
+	RGB MARKDOWN_EN_DIV = new RGB(128, 0, 0);
+	RGB MARKDOWN_EN_DIV_BG = new RGB(150, 250, 250);
+	RGB MARKDOWN_DD_DIV = new RGB(128, 0, 0);
+	RGB MARKDOWN_DD_DIV_BG = new RGB(150, 250, 250);
+	RGB MARKDOWN_PD_DIV = new RGB(128, 0, 0);
+	RGB MARKDOWN_PD_DIV_BG = new RGB(150, 250, 250);	
+	RGB MARKDOWN_CN_SEC = new RGB(128, 128, 128);
+	RGB MARKDOWN_CN_SEC_BG = new RGB(150, 250, 250);
+	RGB MARKDOWN_WS_SEC = new RGB(128, 128, 128);
+	RGB MARKDOWN_WS_SEC_BG = new RGB(150, 250, 250);	
+	RGB MARKDOWN_LS_SEC = new RGB(128, 128, 128);
+	RGB MARKDOWN_LS_SEC_BG = new RGB(150, 250, 250);	
+	RGB MARKDOWN_COMMENT = new RGB(0, 128, 0);
+	RGB MARKDOWN_COMMENT_BG = new RGB(0, 128, 0);	
+}

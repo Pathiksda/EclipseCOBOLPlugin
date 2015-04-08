@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="de.vogella.plugin.cobide.new"
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="category.COBOL"
+            class="de.vogella.plugin.cobide.wizard.newwiz"
+            hasPages="true"
+            icon="icons/wizicon.jpg"
+            id="de.vogella.plugin.cobide.newwiz"
+            name="COBOL IDE"
+            project="true">
+      </wizard>
+      <category
+            id="category.COBOL"
+            name="COBOL">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <newWizardShortcut
+               id="de.vogella.plugin.cobide.newwiz">
+         </newWizardShortcut>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="de.vogella.plugin.cobide.editor.MarkdownTextEditor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            default="true"
+            extensions="COB,PCO,cob,pco,cbl"
+            icon="icons/wizicon.jpg"
+            id="de.vogella.plugin.cobide.MarkdownTextEditor"
+            name="MarkdownTextEditor">
+      </editor>
+   </extension> 
+</plugin>
